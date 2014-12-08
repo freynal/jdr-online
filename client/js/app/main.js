@@ -5,9 +5,9 @@ require.config ({
         jqueryui:'http://code.jquery.com/ui/1.11.2/jquery-ui.min',
         underscore:'http://underscorejs.org/underscore-min',
         backbone:'http://backbonejs.org/backbone-min',
-        text:'http://raw.githubusercontent.com/requirejs/text/latest/text',
+        text:'libs/text',
         domReady:'http://cdnjs.cloudflare.com/ajax/libs/require-domReady/2.0.1/domReady.min',
-        tpl:'../templates'
+        tpl:'../template'
     },
     shim:{
         underscore:{
