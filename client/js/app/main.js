@@ -6,6 +6,7 @@ require.config ({
         underscore:'http://underscorejs.org/underscore-min',
         backbone:'http://backbonejs.org/backbone-min',
         text:'http://raw.githubusercontent.com/requirejs/text/latest/text',
+        domReady:'http://cdnjs.cloudflare.com/ajax/libs/require-domReady/2.0.1/domReady.min',
         tpl:'../templates'
     },
     shim:{
@@ -19,8 +20,6 @@ require.config ({
     }
 });
 
-require (['jquery', 'underscore', 'backbone', 'app/app'], function ($, _, Backbone, App) {
-    $(function() {
-        App.initialize();
-    });
+require (['jquery', 'underscore', 'backbone', 'app/app', 'domReady!'], function ($, _, Backbone, App) {
+    App.initialize();
 });
