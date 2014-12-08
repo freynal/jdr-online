@@ -1,4 +1,4 @@
-define (['jquery', 'underscore', 'backbone'], function ($, _, Backbone, Game) {
+define ([], function () {
     return {
         initialize: function () {
             alert('coucou!');

@@ -1,11 +1,11 @@
 require.config ({
     baseUrl:'js',
     paths:{
-        jquery:'//code.jquery.com/jquery-2.1.1.min.js',
-        jqueryui:'//code.jquery.com/ui/1.11.2/jquery-ui.min.js'
-        underscore:'//underscorejs.org/underscore-min.js',
-        backbone:'//backbonejs.org/backbone-min.js',
-        text:'//raw.githubusercontent.com/requirejs/text/latest/text.js',
+        jquery:'http://code.jquery.com/jquery-2.1.1.min',
+        jqueryui:'http://code.jquery.com/ui/1.11.2/jquery-ui.min',
+        underscore:'http://underscorejs.org/underscore-min',
+        backbone:'http://backbonejs.org/backbone-min',
+        text:'http://raw.githubusercontent.com/requirejs/text/latest/text',
         tpl:'../templates'
     },
     shim:{
@@ -19,7 +19,7 @@ require.config ({
     }
 });
 
-require (['jquery', 'underscore', 'backbone' 'app'], function ($, _, Backbone, App) {
+require (['jquery', 'underscore', 'backbone', 'app/app'], function ($, _, Backbone, App) {
     $(function() {
         App.initialize();
     });
