@@ -1,4 +1,4 @@
-define(['jquery', 'underscore','backbone','text!tpl/test.template.html'], function($, _, Backbone, tpl) {
+define(['jquery', 'underscore','backbone','text!tpl/test.tpl'], function($, _, Backbone, tpl) {
     return Backbone.View.extend ({
         tagName:"div",
         el:"#test",
