@@ -4,15 +4,15 @@ define([
     'model/equipment/weaponMdl'],
     function(
         Backbone,
-        ItemBase,
+        BaseItem,
         Weapon){
    return Backbone.Collection.extend({
        model: function (pAttrs, pOptions) {
            switch (pAttrs.type) {
-               case ItemBase.TypeEnum.Weapon:
+               case BaseItem.TypeEnum.Weapon:
                    return new Weapon(pAttrs, pOptions);
                default:
-                   return new ItemBase(pAttrs, pOptions);
+                   return new BaseItem(pAttrs, pOptions);
            }
        }
    });
