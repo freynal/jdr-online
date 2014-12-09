@@ -13,5 +13,11 @@ define(['backbone'], function(Backbone) {
             }, {silent:true});
             this.trigger('change');             //  trigger event only once
         }
+    },{ // STATIC METHODS HERE
+       ColorEnum:Object.freeze({
+            GREEN:0,
+            RED:1,
+            BLUE:2
+        }) 
     });
 });
